@@ -1,0 +1,103 @@
+/*=========== HOME =====================*/
+#home {
+  background: black;
+  overflow: hidden;
+}
+
+#home .container {
+  margin: 0;
+}
+
+.base_number {
+  text-align: center;
+  margin: 1rem;
+}
+
+#home .image {
+  position: relative;
+}
+#home .card {
+  justify-content: space-between;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+#home .image img {
+  position: relative;
+}
+
+#home .image img,
+#home .image::before {
+  border-radius: 0.25rem;
+  margin-left: -0.8rem;
+}
+
+.quadrado {
+  position: relative;
+  display: inline-block;
+  font-family: Sans-Serif;
+  padding: 3px;
+  width: calc(100% / 15);
+  min-width: 55px;
+  cursor: pointer;
+}
+
+#home h2 {
+  font: 700 var(--title-font-size) var(--title-font);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+  text-align: center;
+  color: rgb(0, 255, 0);
+}
+
+.bg {
+  border-radius: 4px;
+  background-color: #585858;
+  font-size: 10pt;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  color: #fff;
+  vertical-align: middle;
+  position: relative;
+  left: 0.2rem;
+  background-color: blue;
+}
+
+.cotas-item {
+  border-radius: 4px;
+  background-color: #585858;
+  font-size: 10pt;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  color: #fff;
+  vertical-align: middle;
+  position: relative;
+  left: 0.2rem;
+}
+/*=========== MEDIA QUERIES =====================*/
+
+/* extra large devices: 1200 */
+@media (min-width: 1200px) {
+  /* home */
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#home img {
+    width: 120%;
+    height: auto;
+    padding-top: 2rem;
+}
+
+#home .image {
+    order: 1;
+    width: 400px;
+    margin-right: 4rem;
+}
+}

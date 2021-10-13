@@ -1,0 +1,133 @@
+/*=========== ABOUT =====================*/
+
+#about {
+    background: black;
+}
+
+.accordion {
+    max-width: 200px;
+    font: 700 var(--subtitle-font-size) var(--title-font);
+    display: inline-block;
+}
+.accordion .contentBx {
+    position: relative;
+    margin: 10px 10px;
+}
+.accordion .contentBx .label {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.accordion .contentBx .label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background: #585858;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion .contentBx.active .content {
+    height: 150px;
+    text-align: center;
+}
+
+.p {
+    padding: 2rem;
+}
+
+#about .title {
+    font: 700 var(--title-font-size) var(--title-font);
+    color: rgb(0, 255, 0);
+    -webkit-font-smoothing: auto;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#about .container {
+    margin: 0;
+}
+
+#about .image {
+    position: relative;
+}
+
+#about .image img {
+    border-radius: 0.25rem;
+    align-items: center;
+}
+
+#about .text {
+    text-align: center;
+}
+#about img {
+    border-radius: 0.25rem;
+}
+
+#about .bank {
+    text-align: center;
+}
+
+#about 
+
+/* swiper */
+.swiper-slide {
+    height: auto;
+    padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--base-color);
+}
+
+/*=========== MEDIA QUERIES =====================*/
+
+/* extra large devices: 1200 */
+@media (min-width: 1200px) {
+    /* about */
+    #about.section {
+        padding: 5rem 0;
+    }
+    #about .container {
+        margin: 0 auto;
+        grid-auto-flow: column;
+    }
+
+    .accordion .contentBx.active .content {
+        height: 162px;
+        text-align: center;
+    }
+
+    #about img {
+        border-radius: 0.25rem;
+        position: relative;
+        width: auto;
+        height: 60px;
+    }
+
+    #about .qr_code {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    #about .bank {
+        display: flex;
+        justify-content: center;
+    }
+}

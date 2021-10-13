@@ -1,0 +1,107 @@
+/*=========== WINNERS =====================*/
+#winners {
+  background: rgb(0, 255, 0);
+  text-align: center;
+}
+
+#winners .title {
+  font: 700 var(--title-font-size) var(--title-font);
+  color: black;
+  -webkit-font-smoothing: auto;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+#winners a {
+  font: 700 var(--title-font-size) var(--title-font);
+  color: black;
+
+  text-align: center;
+}
+.modal {
+  position: fixed;
+  top: 7rem;
+  right: 1rem;
+  bottom: 7rem;
+  left: 1rem;
+  font-family: var(--title-font);
+  background: white;
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 10px;
+  position: relative;
+  margin: 10% auto;
+  padding: 15px 20px;
+}
+#winners p {
+  font: var(--title-font);
+  color: black;
+}
+#winners h2 {
+  font: var(--title-font);
+  color: black;
+}
+
+.fechar {
+  position: absolute;
+  width: 30px;
+  right: -15px;
+  top: -20px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  background: red;
+  border-radius: 50%;
+  font-size: 16px;
+  color: black;
+}
+
+.form {
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.button1 {
+  margin-left: 4.2rem;
+}
+
+.nome,
+.contato,
+.email,
+.button1 {
+  margin-top: 1rem;
+}
+
+/*=========== MEDIA QUERIES =====================*/
+
+/* extra large devices: 1200 */
+@media (min-width: 1200px) {
+  /* winners */
+  .modal {
+    position: fixed;
+    top: 10rem;
+    right: 18rem;
+    bottom: 10rem;
+    left: 18rem;
+    font-family: var(--title-font);
+    background: white;
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+}
