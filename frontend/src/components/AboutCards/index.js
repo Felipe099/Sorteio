@@ -9,7 +9,7 @@ const AboutCards = () => {
                     <div className="format">
                         <div className="test">
                             <div className="numero">1</div>
-                            <div className="title">🔍 Escolha o sortei</div>
+                            <div className="title">🔍 Escolha o sorteio</div>
                             <div className="text">
                                 Verifique a descrição, regulamento do sorteio e
                                 fotos em caso de dúvidas entre em contato com o
